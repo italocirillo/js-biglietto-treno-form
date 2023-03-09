@@ -1,0 +1,111 @@
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: whitesmoke;
+}
+
+/* TIPOGRAFIA */
+h1{
+    text-transform: uppercase;
+    font-family: 'Tilt Prism', cursive;
+    color: goldenrod;
+    text-align: center;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/cover-treno.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sfocatura{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    fill-opacity: 100%;
+    text-align: center;
+}
+/* Biglietti */
+.biglietteria{
+    text-align: start;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+    margin: 0 auto;
+}
+.biglietteria p{
+    padding: 1em 0em;
+}
+.biglietteria h2{
+    padding: 0.5em 0em;
+    color: darkgoldenrod;
+    padding-top: 2em;
+}
+.bottone{
+   padding: 0.3em 0.5em;
+   cursor: pointer;
+   border-color: burlywood;
+   text-transform: uppercase;
+   margin-right: 1em;
+   margin-bottom: 2em;
+}
+.riquadro-biglietto{
+    background-image: url(../img/coverbiglietto.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.input-biglietto{
+    display: flex;
+    justify-content: center;
+    padding: 2em 1em;
+    gap: 2em;
+}
+.biglietto-output{
+    text-align: start;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    color: black;
+    margin: 5em 1em;
+    display: flex;
+}
+.riquadro-nome{
+    background-color: gray;
+    padding-top: 1em;
+    padding-bottom: 3em;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+.biglietto-output h4{
+    padding: 1em 2em;
+}
+.biglietto-output p{
+    text-align: center;
+}
+.biglietto-output div{
+    border-right: 1px solid gray ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6em;
+}
+.riquadro-info{
+    font-size: 0.4rem;
+    padding: 1em;
+    border: 1px solid gray;
+    display:inline-block;
+    align-self: flex-end;
+}
+#numero-carrozza{
+    padding-right: 2em;
+}

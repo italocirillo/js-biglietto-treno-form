@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +7,86 @@
     <title>Biglietto treno</title>
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Tilt+Prism&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <main>
-        <!-- Input da richiedere all'utente -->
-        <label for="distanza">Numero di km da percorrere</label>
-        <input type="number" id="distanza">
-        <label for="età">Età del passegero</label>
-        <input type="number" id="età">
-        <button id="invia">invia</button>
-        <!-- Output da stampare all'utente -->
-        <h2 id="risultato"></h2>
+
+        <div class="wrapper">
+            <div class="sfocatura">
+                <h1>BIGLIETTERIA FERROVIE JS</h1>
+                <section class="biglietteria">
+                    <!-- Biglietto input -->
+                    <h2>CALCOLA PREZZO BIGLIETTO:</h2>
+                    <div class="riquadro-biglietto">
+                        <!-- Input da richiedere all'utente -->
+                        <div class="input-biglietto">
+                            <div>
+                                <label for="nome">Nome Cognome</label>
+                                <input type="text" id="nome"> 
+                            </div>
+                            <div>
+                                <label for="distanza">Numero di km</label>
+                                <input type="number" id="distanza"> 
+                            </div>
+                            <div>
+                                <label for="età">Età del passegero</label>
+                                <select name="selettore-età" id="età">
+                                    <option value=""></option>
+                                    <option value="minorenne">Minorenne</option>
+                                    <option value="maggiorenne">Maggiorenne</option>
+                                    <option value="anziano">Anziano</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div classe="bottoni">
+                            <button class="bottone" id="invia">genera</button>
+                            <button class="bottone" id="reset">reset</button>
+                        </div>
+                    </div>
+                    <!-- Fine biglietto input -->
+
+                    <!-- Biglietto Output -->
+                    <h2>IL TUO BIGLIETTO:</h2>
+                    <div class="riquadro-biglietto">
+                        <div class="biglietto-output">
+                            <div class="riquadro-nome">
+                                <h3>NOME PASSEGGERO</h3>
+                                <p id="nome-output"></p>
+                            </div>
+                            <div>
+                                <h4>DISTANZA</h4>
+                                <p id="distanza-output"></p>
+                            </div>
+                            <div>
+                                <h4>SCONTO</h4>
+                                <p id="sconto-da-applicare"></p>
+                            </div>
+                            <div>
+                                <h4>PREZZO PIENO</h4>
+                                <p id="prezzo-non-scontato"></p>
+                            </div>
+                            <div>
+                                <h4>PREZZO DA SCONTARE</h4>
+                                <p id="prezzo-da-scontare"></p>
+                            </div>
+                            <div>
+                                <h4>PREZZO FINALE</h4>
+                                <p id="prezzo-finale"></p>
+                                <div class="riquadro-info">
+                                    <span><strong>N° carozza: </strong><span id="numero-carrozza"></span><strong>   Codice CP: </strong><span id="codice-cp"></span></span>
+                                </div>
+                            </div> 
+                        </div>
+                        <!-- Fine biglietto Output -->
+                    </div>
+                </section>
+            </div>
+        </div>
     </main>
 
     <!-- Script js -->
